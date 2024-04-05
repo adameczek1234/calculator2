@@ -38,6 +38,18 @@ int main(int argc, char *argv[]) {
             printf("%d * %d = %d\n", number1, number2, result);
             return 0;
         }
+        if (!strcmp("div", argv[2])) {
+            if(number2 == 0)
+            {
+                printf("dzielenie przez zero");
+            }
+            else
+            {
+                result = number1 / number2;
+                printf("%d / %d = %d\n", number1, number2, result);
+            }
+            return 0;
+        }
     }
 
     usage(argv[0]);
